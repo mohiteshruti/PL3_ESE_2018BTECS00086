@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="javascript/js.js="></script>
+	<script src="javascript/login.js"></script> 
+</head>
+
+<body class="body">
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+
+		</ul> 
+	</nav>
+	<div class="container">
+	  <div class="main">
+	  	<h3>Faculty Login</h3><hr/>
+ 		<form method="get" name="myform">
+			<label>First Name:</label>
+			<input type="text" name="firstname" size="15"><br>
+			<label>Middle Name:</label>
+			<input type="text" name="middlename" size="15"><br>
+			<label>Last Name:</label>
+			<input type="text" name="lastname" size="15"><br>
+			<label>Mobile No.:</label> 
+		<input type="text" name="country code"  value="+91" size="2"/>   
+		<input type="text" name="phone" size="10"/> <br>
+		<label>ID Proof:</label>
+		<select>
+			<option value="Adhar Card" selected="Adhar Card">Adhar Card</option>
+			<option value="PAN Card">Birth Certificate</option>
+		</select><br><br>
+		<label>Department</label>
+			<select name="Department">
+				<option>Select Department</option>
+				<option>Computer Science And Engineering</option>
+				<option>Information Technology</option>
+				<option>Civil</option>
+				<option>Electrical</option>
+				<option>Electronics</option>
+				<option>Mechanical</option>
+            </select><br><br>
+		<label>Qualification:</label>
+			<select required> 
+				<option value="-Select Course-" selected="Course">- Select Course -</option>  
+				<option value="SSC">SSC</option>  
+				<option value="HSC-S">HSC-Science</option>  
+				<option value="HSC-A">HSC-Art</option>  
+				<option value="HSC-C">HSC-Commerce</option>    
+			</select><br><br>
+		<label>Address:</label><br>
+		<textarea cols="60" rows="5" value="address" required></textarea><br> 
+			<strong>User Name :</strong></br>
+			<input type="text" name="username" id="username"/></br>
+ 			<strong>Password :</strong></br>
+			<input type="password" name="password" id="password"/></br>
+ 			<input type="button" value="Login" id="submit" onclick="validate()"/>
+		</form>
+		<span><b class="note">Note : </b><strong>For this demo use following username and password. <br/><b class="valid"><h4>User Name : informatics<br/>Password : informatics123</b></h4></span></strong>
+	  </div>
+	</div>
+	<script type="text/javascript">
+  	document.title="Login";
+</script>
+</body>
+</html>
